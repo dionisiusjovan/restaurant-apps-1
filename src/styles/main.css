@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: #424242;
+}
+
+/* 
+ * skip to content 
+ */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/*
+ * Header
+ *
+ */
+
+.header {
+    min-height: 70px;
+    transition: min-height 0.3s;
+    background-color: #C36A2D;
+}
+
+.header__inner {
+    width: 100%;
+    
+}
+
+.header__title {
+    font-weight: 300;
+    font-size: 2em;
+    margin: 0.8em 0.25em 0.5em auto;
+    display: block;
+    color: #EADCA6;
+    float: left;
+}
+
+.header__menu {
+    font-size: 32px;
+    margin: 10px auto;
+    display: inline-block;
+    text-align: center;
+    min-width: 44px;
+    min-height: 44px;
+    text-decoration: none;
+    color: #EADCA6;
+    opacity: 0.5;
+    padding-left: 0.5em;
+    position: absolute;
+    left: 5%;
+    transform: translateX(-50%);
+}
+
+.header__menu a:hover {
+    text-decoration: none;
+    color: none;
+}
+
+/*
+ * Top level navigation
+ */
+
+.nav {
+    /* width: 800px; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.nav__list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+.nav__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    line-height: 24px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 1.3em;
+    text-decoration: none;
+    color: #EADCA6;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: #FBFBFB;
+}
+
+
+/*
+ * Jumbotron
+ */
+
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 380px;
+    width: 100%;
+    text-align: center;
+    background-image: url("../public/images/heros/hero-image_2.jpg");
+    background-position: center;
+    background-color: green;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+.hero__inner {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.hero__title {
+    color: white;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.hero__tagline {
+    color: #fff;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/*
+ * main
+ */
+
+main {
+    /* width: 1200px; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*
+ * content
+ */
+
+.content {
+    padding: 32px;
+}
+
+/*
+ * latest
+ */
+
+.popular {
+    /* width: 1000px; */
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.popular__label {
+    font-size: 32px;
+    font-weight: lighter;
+    color: #C36A2D;
+}
+
+.popular__label::after {
+    content: '';
+    margin: 16px auto;
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/*
+* post item
+*/
+
+.post-item {
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.post-item__content {
+    padding: 16px 32px 32px 32px;
+}
+
+.post-item__thumbnail {
+    align-items: center;
+    max-height: 300px;
+}
+
+.post-item__rating {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.post-item__city {
+    color: #D98C00;
+    font-size: 2.0vh;
+    text-decoration: none;
+}
+
+.post-item__city a{
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.post-item__city:hover {
+    text-decoration: underline;
+}
+
+.post-item__title {
+    font-weight: 500;
+    font-size: 3.0vh;
+    margin-top: 16px;
+    transition: 0.3s opacity;
+    color: #C36A2D;
+}
+
+.post-item__title a{
+    display: inline-block;
+    min-width: 44px;
+    min-width: 44px;
+}
+
+.post-item__title:hover {
+    opacity: 0.5;
+}
+
+.post-item__title a {
+    text-decoration: none;
+    color: inherit;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.post-item__description {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+/*
+ * footer
+ */
+
+footer {
+    background-color: #C36A2D;
+    padding: 2em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer ul {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 1em;
+    font-size: 14px;
+}
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: #EADCA6;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #FBFBFB;
+    min-height: 44px;
+    min-width: 44px;
+}
